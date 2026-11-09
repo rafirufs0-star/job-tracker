@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Job Application Tracker</title>
+<meta name="description" content="Track job applications, interviews and follow-ups. Works offline. Your data stays on your device.">
+<meta name="theme-color" content="#231F55">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Job Tracker">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="shell">
+  <aside class="side" id="side"></aside>
+  <div class="col">
+    <header class="top" id="top"></header>
+    <div id="banners"></div>
+    <main id="main" tabindex="-1"><p style="padding:24px">Loading…</p></main>
+  </div>
+</div>
+<nav class="tabs" id="tabs"></nav>
+<dialog id="dlg" aria-labelledby="dlgTitle"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<input type="file" id="fileRestore" accept=".json,application/json" hidden>
+<input type="file" id="fileCsv" accept=".csv,text/csv" multiple hidden>
+<noscript><p style="padding:24px">This app needs JavaScript to run.</p></noscript>
+<script src="locale-en.js"></script>
+<script src="util.js"></script>
+<script src="i18n.js"></script>
+<script src="db.js"></script>
+<script src="store.js"></script>
+<script src="csv.js"></script>
+<script src="ics.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
